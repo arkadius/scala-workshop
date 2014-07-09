@@ -1,4 +1,4 @@
-package ready.p06
+package ready.p07
 
 object Immutability extends App {
 

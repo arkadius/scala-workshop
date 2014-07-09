@@ -1,4 +1,4 @@
-package ready.p05
+package ready.p06
 
 class Factorial extends Function1[Int, Int] {
   def apply(n: Int): Int =

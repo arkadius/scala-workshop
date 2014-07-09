@@ -1,4 +1,4 @@
-package ready.p05
+package ready.p06
 
 object CallByName extends App {
 
