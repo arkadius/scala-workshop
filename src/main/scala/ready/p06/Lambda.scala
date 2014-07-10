@@ -1,6 +1,6 @@
 package ready.p06
 
-object CallByName extends App {
+object Lambda extends App {
 
   var i = 0
   execute { () =>
