@@ -26,7 +26,7 @@ public class LessBoilerplateJava {
         }
 
         void eat(String worm, boolean productionMode) throws Exception {
-            if (worm.equals("earthworm"))
+            if (doesEat(worm))
                 System.out.println("Yummy");
             else if (!productionMode)
                 throw new Exception("Can't eat this");

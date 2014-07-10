@@ -23,7 +23,7 @@ object LessBoilerplate extends App {
     def doesEat(worm: String) = worm == "earthworm"
 
     def eat(worm: String, productionMode: Boolean = false) {
-      if (worm == "earthworm")
+      if (doesEat(worm))
         println("Yummy")
       else if (!productionMode)
         throw new Exception("Can't eat this")
