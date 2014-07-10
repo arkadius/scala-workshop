@@ -16,6 +16,10 @@ public class ImplicitParamsJava {
     }
 
     void doJobUsingStaticContext(String normalParam) {
+        goingDeeper(normalParam);
+    }
+
+    void goingDeeper(String normalParam) {
         String currentSessionId = SessionContextHolder.getCurrentContext().getSessionId();
         if (currentSessionId == null)
             System.out.println("Not logged!");

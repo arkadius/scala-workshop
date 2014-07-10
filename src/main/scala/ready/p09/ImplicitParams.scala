@@ -8,7 +8,14 @@ object ImplicitParams extends App {
     doJobUsingStaticContext("normal")
   }
 
-  def doJobUsingStaticContext(normalParam: String)(implicit context: SessionContext) {
+  def doJobUsingStaticContext(normalParam: String)
+                             (implicit context: SessionContext) {
+    goingDeeper(normalParam)
+  }
+
+  def goingDeeper(normalParam: String)
+                 (implicit context: SessionContext) {
+
     context.sessionIdOpt.map { sessionId =>
       println("Logged.")
     } getOrElse {
