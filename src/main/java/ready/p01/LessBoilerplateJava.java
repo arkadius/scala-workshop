@@ -22,10 +22,7 @@ public class LessBoilerplateJava {
         }
 
         boolean doesEat(String worm) {
-            if (worm.equals("earthworm"))
-                return true;
-            else
-                return false;
+            return worm.equals("earthworm");
         }
 
         void eat(String worm, boolean productionMode) throws Exception {

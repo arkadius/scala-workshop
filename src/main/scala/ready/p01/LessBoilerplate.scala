@@ -20,11 +20,7 @@ object LessBoilerplate extends App {
       println("Quack")
     }
 
-    def doesEat(worm: String) =
-      if (worm == "earthworm")
-        true
-      else
-        false
+    def doesEat(worm: String) = worm == "earthworm"
 
     def eat(worm: String, productionMode: Boolean = false) {
       if (worm == "earthworm")
